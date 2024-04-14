@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <curses.h>
-#include <conio.h>
 #include <unistd.h>
 //#define MIN_Y 2
 
@@ -79,7 +78,8 @@ snake_t moveLeft(snake_t snake){
 	return snake;
 	}	
 	
-int main(){
+int main()
+{
 	struct snake_t snake = initSnake( 10, 5, 2);
 	printSnake(snake);
 	while(1)//for( int i = 0; i < 8; ++i)
@@ -90,4 +90,4 @@ int main(){
 		printSnake(snake);
 	}
 	return 0;
-	}
+}
