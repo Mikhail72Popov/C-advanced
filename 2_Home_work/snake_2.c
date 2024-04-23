@@ -259,7 +259,7 @@ void gameOver (snake_t snake)
 
 int main()
 {
-    struct snake_t snake = initSnake(10, 5, 4);
+    struct snake_t snake = initSnake(5, 3, 3);
     printSnake(snake);
     int key = LEFT;
     while (1)
