@@ -194,7 +194,7 @@ snake_t moveSnake(snake_t snake, int key)
 // Использование клавиш
 int keyProcessing(snake_t snake, int key)
 {
-    char ch = getch();
+    char ch = getchar();
     if (ch == 'w' || ch == 'W')
     {
         if (checkDirection(snake, UP))
@@ -255,6 +255,7 @@ void gameOver (snake_t snake)
         }
     }
 }
+
 
 int main()
 {
