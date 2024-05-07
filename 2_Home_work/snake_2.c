@@ -259,7 +259,9 @@ void gameOver (snake_t snake)
 
 int main()
 {
+
     struct snake_t snake = initSnake(10, 5, 4);
+
     printSnake(snake);
     int key = LEFT;
     while (1)
@@ -276,4 +278,6 @@ int main()
     }
 
     return 0;
+
 }
+
